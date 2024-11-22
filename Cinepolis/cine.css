@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1f26; /* Fondo en azul oscuro */
+    color: #e0e0e0; /* Texto en gris claro */
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #8ab4f8; /* Azul claro */
+    font-size: 2rem;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #2a2c36; /* Caja más oscura */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: bold;
+    color: #b8b8ff;
+}
+
+input[type="number"], input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #404258; /* Azul grisáceo */
+    color: #e0e0e0;
+    width: 100%;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+    background-color: #555770;
+}
+
+button {
+    padding: 12px 15px;
+    background-color: #6a67ce; /* Morado suave */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #817cdd; /* Morado más claro */
+}
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #2a2c36; /* Fondo de tabla */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: none;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #3b3e51; /* Encabezado más oscuro */
+    color: #8ab4f8;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #33354a; /* Filas de tabla */
+    color: #e0e0e0;
+}
+
+.available {
+    color: #56fca2; /* Verde para asientos disponibles */
+}
+
+.occupied {
+    color: #ff6584; /* Rojo rosado para ocupados */
+}
+
+.action-button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.edit {
+    background-color: #8ab4f8;
+    color: #1e1f26;
+}
+
+.edit:hover {
+    background-color: #5e8bf8;
+}
+
+.delete {
+    background-color: #ff6584;
+    color: #1e1f26;
+}
+
+.delete:hover {
+    background-color: #f25474;
+}
+
+/* Añadir estilo para hover en filas de la tabla */
+tr:hover td {
+    background-color: #444764;
+}

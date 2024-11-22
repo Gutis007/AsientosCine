@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="cine.css">
+    <title>Reservación de Boletos de Cine</title>
+</head>
+<body>
+    <h1>🎟️ Reservación de Boletos de Cine 🎬</h1>
+
+    <div class="reservation-form">
+        <label for="seatNumber">Número de Asiento (1-20):</label>
+        <input type="number" id="seatNumber" min="1" max="20" required>
+
+        <label for="personName">Nombre del Cliente:</label>
+        <input type="text" id="personName" required>
+
+        <button id="reserveButton">Reservar Asiento</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Asiento</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="seatTable">
+            <!-- Las filas de la tabla serán generadas dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="cine.js"></script>
+</body>
+</html>
